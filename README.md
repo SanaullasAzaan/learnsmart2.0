@@ -13,6 +13,11 @@ This project is a static webpage that displays testimonials from clients or user
 <img width="350" alt="Screenshot 2023-10-31 at 9 04 03 PM" src="https://github.com/SanaullasAzaan/learnsmart2.0/assets/97332063/21908ddd-7e6f-4d12-8dcd-bb759e7cee24">
 
 
+
+
+
+
+
 🌐 **Firebase-powered Signup/Login Webpage**
 
 Welcome to our authentication solution powered by Firebase! This repository hosts the codebase for a seamless and secure user signup and login webpage. We've leveraged Firebase as the backend to handle user authentication, ensuring robust security and reliability.
