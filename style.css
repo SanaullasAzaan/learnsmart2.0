@@ -1,78 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-
-
+    font-family: 'Poppins', sans-serif;
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background: linear-gradient(to right, hsl(186,98%,37%),hsl(170,100%,40%));
-}
-.container{
-    max-width: 1170px;
-    margin: auto;
-    padding: 0 15px;
-
-}
-/*section-header */
-.section-header{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.section-header .title{
-    font-size: 35px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: hsl(0,0%,100%);
-    line-height: 1.2;
-}
-/*testimonials */
-.testimonials{
-    padding: 100px 0;
-
-}
-.testimonials-item{
-    background-color: white;
-    padding: 30px;
-    border-radius: 30px;
-
-}
-.testimonials-item .info{
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background: #e3f2fd;
 }
-.testimonials-item img{
-    max-width: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-    vertical-align: middle;
+.swiper{
+    width: 900px;
+    height: 500px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
 }
-.testimonials-item .name{
-    font-size: 24px;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: black;
-    line-height: 1.2;
 
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
 }
-.testimonials-item .job{
-    text-transform: capitalize;
-    color: grey;
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
-.testimonials-item p{
-    margin-top: 20px;
-    color: grey;
+.swiper-slide img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
 }
-.testimonials .swiper-pagination{
+.detail-bx{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.quote-detail-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-icon-bx{
+    width: 100%;
+}
+
+.quote-icon{
+    font-size: 60px;
+    color: #dfe4ea;
+}
+
+.bxs-quote-alt-right{
+    float: right;
+}
+
+.name-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.name{
     position: relative;
-    margin-top: 40px;
-    bottom: auto;
+    bottom: 1em;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4834d4;
 }
-.testimonials .swiper-pagination-bullet{
-    height: 12px;
-    width: 12px;
-    background-color: white;
+
+
+.job{
+    position: relative;
+    bottom: 1.2em;
+    font-size: 24px ;
+    font-weight: 400;
+    color: #333;
 }
+
+.swiper-button{
+    width: 60px !important;
+    height: 60px !important;
+    background: #4834d4;
+    transition: 0.2s;
+    
+}
+
+.swiper-button:hover{
+    background: rgba(0,0,0,0.2);
+}
+.icons{
+    /* Adjust the margin as needed */
+    font-size: 1.5rem;
+    
+}
+.custom-icon i {
+    color: #333;
+    margin-right: 10px; /* Adjust the margin as needed */
+    transition: color 0.3s ease; /* Smooth transition for the color change */
+  }
+ 
+  .linkedin:hover {
+    color: #0077b5 !important; /* LinkedIn hover color */
+  }
+
+  .snapchat:hover {
+    color: #fffc00 !important; /* Snapchat hover color */
+  }
+
+  .instagram:hover {
+    color: #bc2a8d !important; /* Instagram hover color */
+  }
+  .bi-linkedin:hover {
+    color: #0077b5 !important; /* LinkedIn hover color */
+  }
+  .bi-snapchat:hover{
+    color: #fffc00
+  }
+  .bi-instagram:hover{
+    color: #bc2a8d !important; 
+  }
+/* .custom-icon:hover{
+    
+        color: rgb(4, 255, 0);
+
+} */
+.swiper-button::after, .swiper-button::before{
+    font-size: 20px;
+    color: #fff;
+}
+.swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4834d4 !important;
+  }
+  @media screen and (max-width:992px) {
+
+    .swiper{
+        width: 300px;
+    }
+
+    .swiper-slide{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .swiper-slide img{
+        height: 260px;
+    }
+    .swiper-slide p{
+        font-size: 12px;
+    }
+    .quote-icon{
+        font-size: 24px;
+    }
+    #hide
+    {
+        display: none;
+    }
+    
+    .swiper-pagination-bullet{
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .name-detail{
+        margin-bottom: 20px;
+    }
+    .name-detail .name{
+        font-size: 18px;
+    }
+
+.name-detail .job{
+    font-size: 16px;
+}
+.swiper-button{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.swiper-button::after, 
+.swiper-button::before{
+    font-size: 20px !important;
+}
+
+  }
